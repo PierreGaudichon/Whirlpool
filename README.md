@@ -1,5 +1,5 @@
-Javascript-Whirlpool-hash
-=========================
+Whirlpool
+=========
 
 * Originally relased to public domain by _Sean Catchpole_: http://www.sunsean.com/Whirlpool.html
 * Froked from jeffsteinport : https://github.com/jeffsteinport/Javascript-Whirlpool-hash
@@ -7,7 +7,7 @@ Javascript-Whirlpool-hash
 
 
 Installation
-===========
+============
 
 	$ git clone https://github.com/PierreGaudichon/Javascript-Whirlpool-hash.git
 	$ npm install -g Javascript-Whirlpool-hash/
