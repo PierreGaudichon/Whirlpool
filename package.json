@@ -6,9 +6,12 @@
 	"main": "whirlpool.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/PierreGaudichon/Javascript-Whirlpool-hash",
+		"url": "https://github.com/PierreGaudichon/Javascript-Whirlpool-hash"
 	},
-	"keywords": [ "hash", "whirlpool"],
+	"keywords": [ "hash", "whirlpool" ],
+	"dependencies": {
+		"commander": "2.2.0"
+	},
 	"analyse": true,
 	"licence": "BSD-2-Clause"
 }
