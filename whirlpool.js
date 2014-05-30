@@ -1,4 +1,4 @@
-/* Whirlpool Hashing Function v3.0 ~ Sean Catchpole - Copyright 2009 Public Domain 
+/* Whirlpool Hashing Function v3.0 ~ Sean Catchpole - Copyright 2009 Public Domain
  * http://www.sunsean.com/Whirlpool.html
  * Any modifications released under BSD 2-Clause License: http://opensource.org/licenses/BSD-2-Clause
  * Copyright (c) 2013, Jeff Steinport (https://js.gg)
@@ -143,7 +143,8 @@
     }
   };
 
-  WP = Whirlpool = function(str){ return WP.init().add(str).finalize(); };
+  var hash = function(str){ return WP.init().add(str).finalize(); };
+  WP = Whirlpool = hash;
   WP.version = "3.0";
 
   // Initialize the hashing state.
@@ -165,7 +166,7 @@
     }
     return source;
   };
-  
+
   // Delivers input data to the hashing algorithm. Assumes bufferBits < 512
   WP.add = function(source,sourceBits){
     /*
@@ -269,5 +270,15 @@
     }
     return str;
   };
+
+
+  // Export if in NodeJS environment
+
+  if (exports) {
+    exports.hash = hash;
+    exports.init = WP.init;
+    exports.add = WP.add;
+    exports.finalize = WP.finalize;
+  }
 
 })();
