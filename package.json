@@ -1,0 +1,14 @@
+{
+	"name": "whirlpool",
+	"version": "1.0.0",
+	"description": "An implementation of the Whirlpool hash.",
+	"author": "Pierre Gaudichon",
+	"main": "whirlpool.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PierreGaudichon/Javascript-Whirlpool-hash",
+	},
+	"keywords": [ "hash", "whirlpool"],
+	"analyse": true,
+	"licence": "BSD-2-Clause"
+}
