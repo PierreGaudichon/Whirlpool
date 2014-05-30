@@ -4,6 +4,9 @@
 	"description": "An implementation of the Whirlpool hash.",
 	"author": "Pierre Gaudichon",
 	"main": "whirlpool.js",
+	"bin": {
+		"whirlpool": "./app.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/PierreGaudichon/Javascript-Whirlpool-hash"
