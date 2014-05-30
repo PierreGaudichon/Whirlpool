@@ -9,7 +9,8 @@ Javascript-Whirlpool-hash
 Installation
 ===========
 
-	$ npm install whirlpool
+	$ git clone https://github.com/PierreGaudichon/Javascript-Whirlpool-hash.git
+	$ npm install -g Javascript-Whirlpool-hash/
 
 
 Usage
@@ -31,5 +32,8 @@ Usage
 
 ##CLI
 
-	$ npm install -g whirlpool
 	$ whirlpool string
+
+To hash the content of a file :
+
+	$ whirlpool -f path
